@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220711 09:43:18.192" rpa="false" schemaversion="3">
+<suite id="s1" name="Polri" source="C:\Automation\LoginPolri\Polri.robot">
+<test id="s1-t1" name="Instagram Login Flow" line="31">
+<kw name="Open page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220711 09:43:18.453" level="INFO">Opening browser 'Chrome' to base url 'https://pub-eish-dev.keponet.com/'.</msg>
+<status status="PASS" starttime="20220711 09:43:18.452" endtime="20220711 09:43:31.311"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220711 09:43:31.312" endtime="20220711 09:43:31.483"/>
+</kw>
+<status status="PASS" starttime="20220711 09:43:18.452" endtime="20220711 09:43:31.484"/>
+</kw>
+<kw name="Find login button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220711 09:43:31.487" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220711 09:43:31.486" endtime="20220711 09:43:31.583"/>
+</kw>
+<status status="PASS" starttime="20220711 09:43:31.485" endtime="20220711 09:43:31.584"/>
+</kw>
+<kw name="Fill login Form">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="email"]</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220711 09:43:31.586" level="INFO">Typing text 'jenareishsatu@yopmail.com' into text field '//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20220711 09:43:31.585" endtime="20220711 09:43:31.720"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220711 09:43:31.721" level="INFO">Typing text '12345678' into text field '//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20220711 09:43:31.720" endtime="20220711 09:43:31.826"/>
+</kw>
+<status status="PASS" starttime="20220711 09:43:31.584" endtime="20220711 09:43:31.827"/>
+</kw>
+<kw name="Click login button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220711 09:43:31.828" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220711 09:43:31.828" endtime="20220711 09:43:33.495"/>
+</kw>
+<status status="PASS" starttime="20220711 09:43:31.827" endtime="20220711 09:43:33.496"/>
+</kw>
+<status status="PASS" starttime="20220711 09:43:18.451" endtime="20220711 09:43:33.497"/>
+</test>
+<status status="PASS" starttime="20220711 09:43:18.194" endtime="20220711 09:43:33.502"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Polri">Polri</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
